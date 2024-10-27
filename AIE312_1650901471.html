@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC เมนูแนะนำ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #e1e1e1;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #333;
+            color: #ffd700;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        header img {
+            width: 80px; 
+            position: absolute;
+            left: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            color: #ffd700;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            background-color: #444;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .promo-container {
+            position: relative;
+            margin: 20px 0;
+            width: 60%; 
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            display: inline-block;
+        }
+        .promo-image {
+            width: 100%;
+            display: block;
+        }
+        .promo-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffd700;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .menu-item {
+            background-color: #222;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            width: 220px;
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden; 
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 150px; 
+            object-fit: cover;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #ffd700;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo.png" alt="KFC Logo">
+    <div>
+        <h1>KFC เมนูแนะนำ</h1>
+        <p>สัมผัสความอร่อยที่คุณไม่ควรพลาด!</p>
+    </div>
+</header>
+
+<nav>
+    <a href="https://www.kfc.co.th/">Home</a>
+    <a href="https://www.kfc.co.th/menu">Menu</a>
+    <a href="https://www.kfc.co.th/menu/special-promos">Promotion</a>
+    <a href="https://www.kfc.co.th/promos-rewards">Coupon</a>
+</nav>
+
+<a href="https://www.kfc.co.th" target="_blank" class="promo-container">
+    <img src="https://images.ctfassets.net/n4pc9wlortyn/5K1jergSBUiToYshHuHnTB/803c3741a502b5d6a7fd41b39bc56856/meals_800x600.png?h=600&w=800&fm=webp&fit=fill" alt="KFC Promotion" class="promo-image">
+    <div class="promo-text">โปรโมชั่นพิเศษ! ซื้อ 1 แถม 1</div>
+</a>
+
+<div class="menu">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="menu-item">
+        <img src="https://images.ctfassets.net/n4pc9wlortyn/5K1jergSBUiToYshHuHnTB/803c3741a502b5d6a7fd41b39bc56856/meals_800x600.png?h=600&w=800&fm=webp&fit=fill" alt="ไก่ทอด KFC">
+        <h3>ไก่ทอด KFC</h3>
+    </a>
+    <a href="https://www.mcdonalds.co.th/" target="_blank" class="menu-item">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2023/9/8/FN_KFC-Hot-_-Spicy-Wings-Box_s4x3.jpg.rend.hgtvcom.1280.960.suffix/1694205936317.jpeg" alt="ปีกไก่ทอด">
+        <h3>ปีกไก่ทอด</h3>
+    </a>
+    <a href="https://texaschicken.com/" target="_blank" class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvC9Hjlci3qHmV3t1hxRcr-qrBNf3Epml_yA&s" alt="ชุดแซนวิช">
+        <h3>ชุดแซนวิช</h3>
+    </a>
+    <a href="https://www.jollibeefoods.com/" target="_blank" class="menu-item">
+        <img src="https://assets3.thrillist.com/v1/image/2878607/828x610/flatten;crop;webp=auto;jpeg_quality=60.jpg" alt="เฟรนช์ฟรายส์">
+        <h3>เฟรนช์ฟรายส์</h3>
+    </a>
+</div>
+
+<footer>
+    <p>&copy; 2024 KFC. สงวนลิขสิทธิ์.</p>
+</footer>
+
+</body>
+</html>
